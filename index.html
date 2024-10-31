@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SIDDHESH SAWANT Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Siddhesh Sawant</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<!-- <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+	          	 <div class="overlay"></div>
+	          	</div> -->
+							
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Siddhesh Sawant</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Engineer  ',
+						'Java Programmer  ',
+						'Junior MERN Developer   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <!-- <h2>Junior Java Developer</h2> -->
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.linkedin.com/in/siddheshsawant1008/" class="btn btn-primary py-3 px-4">Linkedin</a> 
+							<a href="https://github.com/Siddhesh-1008" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Siddhesh Sawant</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Java Programmer</span>
+										<span>MERN Stack Software Engineer</span></p>
+
+										<p><span class="title-s">Interenshps: </span>
+											 <span> Java Developer Intern,</span>
+											 <span> MERN Stack Developer Intern </span></p>
+										<p><span class="title-s">Address: </span> <span>Mumbai, India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s" style="font-weight: bold; font-size: 24px;color: white;">Skills</p>
+
+										<ul>
+												<li>
+														<strong>PROGRAMMING LANGUAGES:</strong> 
+														<ul>
+															<li>JAVA, JAVASCRIPT, PYTHON</li>
+							
+													</ul>
+														
+
+												</li>
+												<li>
+														<strong>WEB DEVELOPMENT:</strong>
+														<ul>
+																<li><strong>FRONTEND:</strong> REACT, HTML, CSS, JAVASCRIPT</li>
+																<li><strong>BACKEND:</strong> EXPRESS (BASIC), NODE.JS</li>
+														</ul>
+												</li>
+												<li>
+														<strong>DATABASE MANAGEMENT:</strong>
+														<ul>
+																<li>MONGODB, SQL, JDBC</li>
+														</ul>
+												</li>
+												<li>
+														<strong>VERSION CONTROL & COLLABORATION TOOLS:</strong>
+														<ul>
+															<li>GIT, GITHUB</li>
+													</ul>
+														 
+												</li>
+										</ul>
+
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<!-- <h1 class="big">About</h1> -->
+								<h2 class="mb-4">About Me</h2>
+								
+								<p> A versatile and proactive computer science student with a strong ability to rapidly acquire new skills in web development, database
+									administration, and programming. I seek opportunities to leverage my adaptability and technical skills to contribute meaningfully to real
+								 world projects..</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Java Programmer,Junior MERN Developer</span></li>
+									<!-- <li class="d-flex"><span>Domain:</span> <span>Aspiring Full-Stack Developer with a Bachelor’s in Computer Engineering</span></li> -->
+									<li class="d-flex"><span>Education:</span> <span> Bachelor of Engineering in Computer Engineering</span></li>
+									<li class="d-flex"><span>Language:</span> <span>MARATHI (MOTHER TONGUE) • HINDI (NATIVE/BILINGUAL) • ENGLISH (PROFESSIONAL WORKING) • GERMAN (INTEREST)</span></li>
+									<li class="d-flex"><span>Frontend Development:</span> <span>React, HTML, CSS, JavaScript</span></li>
+									<li class="d-flex"><span>Backend Development:</span> <span>Express (Basic), Node.js</span></li>
+									
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="7">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/siddheshsawant1008/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<!-- <h1 class="big big-2">Resume</h1> -->
+            <h2 class="mb-4">Resume</h2>
+            <p>Solid foundation in software development, having worked on a variety of projects that used technologies such as React.js, Express.js, and MySQL/MongoDB. My work as a Java Developer Intern and MERN Stack Developer at Triviva Software sharpened my skills in both frontend and backend programming, allowing me to create efficient and user-friendly applications. I am enthusiastic about applying my technical abilities and knowledge in real-world situations and am dedicated to lifelong learning and professional development.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Intern Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">9th Dec 2022-8th Feb 2023</span>
+						<h2>MERN Stack Developer  Intern </h2>
+						<span class="position">Trivia Software’s,Thane</span>
+						<p class="mt-4"> 
+							<ul>
+								<li>Created a Splitwise Calculator with React.js, CSS, and JSX that allows users to divide expenditures among several participants in an
+									equal manner, guaranteeing equitable contributions for shared expenses. .</li>
+								<li>Core features for adding, editing, and removing expenses have been implemented, as well as a computation tool that creates a
+									comprehensive table outlining each user's debt to the others for fair expense allocation.</li>
+								<li>Used Firebase for safe transaction storage, producing a dependable and expandable application that improves user experience by
+									offering smooth spending management and real-time updates.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date"> 26th Dec 
+							2022-26th Jan 2023.</span>
+						<h2>Java Developer  Intern </h2>
+						<span class="position">Trivia Software’s,Thane</span>
+						<p class="mt-4"> 
+							<ul>
+								<li> Developed a student management system with JSP and Tomcat that allows for extensive features including student creation,
+									deletion, and detail updates. For a better user experience, all entries are dynamically shown in a read-only textarea..</li>
+								<li> For efficient user administration, secure authentication methods were integrated using JDBC. This allowed for easy registration for
+									new users and login capabilities for current users, guaranteeing data confidentiality and integrity.</li>
+								<li> Implementing a MySQL database to store and manage student records improved data processing and retrieval, which in turn
+									streamlined user interactions and increased operational efficiency, ultimately improving the application's overall functionality.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date"> Aug 2020-May 2024</span>
+    					<h2>Bachelor of Engineering</h2>
+    					<span class="position">A. P. Shah Institute of Technology</span>
+    					<p class="mt-4">Grade: First class distinction. 8.97/10 CGPA</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">Aug 2018- Feb 2020</span>
+    					<h2>Higher Secondary School</h2>
+    					<span class="position">Don Bosco High School</span>
+    					<p class="mt-4">Grade: First class distinction. 78.0%</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+						<!-- ADD RESUME TO GOOGLE DRIVE AND ADD RESUME THEREE -->
+    				<p><a href="https://drive.google.com/file/d/14yqRRu-v-W3QkOoHV_ihNphpl1xrMltK/view?usp=sharing" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <!-- <h1 class="big big-2">Projects</h1> -->
+            <h2 class="mb-4">Projects</h2>
+            <p>Developed sample frontend and backend projects utilizing React, Node.js, Express.js, WebSocket and Multer</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/Siddhesh-1008/QuickMed-Analysis" class="block-20 zoom-effect" style="background-image: url('images/proj1.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading"><a href="https://github.com/Siddhesh-1008/QuickMed-Analysis"> QuickMed-Analysis</a></h3>
+                <p class="project-description" >Built a secure, AI-powered medical platform for personalized treatment and specialist referrals, featuring seamless user onboarding and record management. Leveraged Drizzle ORM, PostgreSQL, and Privy for authentication in a user-friendly dashboard with Kanban functionality.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/Siddhesh-1008/SecureFileSharing" class="block-20 zoom-effect" style="background-image: url('images/proj2.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Siddhesh-1008/SecureFileSharing">SecureFileSharing</a></h3>
+                <p>Developed a secure Node.js file-sharing app with password-protected uploads/downloads, bcrypt encryption, secure email notifications, MongoDB for storage, and Multer for file handling, ensuring only verified users access sensitive data..</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/Siddhesh-1008/ShareWise" class="block-20 zoom-effect" style="background-image: url('images/proj3.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Siddhesh-1008/ShareWise"> Splitwise Calculator</a></h3>
+                <p>Built a React.js Splitwise Calculator with Firebase, enabling users to divide expenses equitably, manage transactions in real-time, and view comprehensive debt tables, ensuring smooth, secure, and scalable spending management.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Siddhesh-1008/Studenthub" class="block-20 zoom-effect" style="background-image: url('images/proj4.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/Siddhesh-1008/Studenthub">Student Hub</a></h3>
+				  <p>Developed a JSP-based student management system with MySQL and secure JDBC authentication, enabling dynamic student record creation, updates, and secure login, enhancing data integrity and user experience on a scalable platform.</p>
+				</div>
+			  </div>
+			</div>
+			
+		 </div>
+	  </div>
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <!-- <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="20">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div> -->
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<!-- <div class="heading"> <h4> I love to solve  problems &amp; uncover hidden data stories </h4> -->
+						<br>
+						<p><a href="https://github.com/Siddhesh-1008" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <!-- <h1 class="big big-2">Contact</h1> -->
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Mumbai, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101">+91 7400208280</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p>
+								<a href="mailto:siddhesh.sawant1008@gmail.com">siddhesh.sawant1008@gmail.com</a>
+							</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="https://drive.google.com/file/d/14yqRRu-v-W3QkOoHV_ihNphpl1xrMltK/view?usp=sharing">Resumelink</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<!-- WEBSITE THAT WILL SHOW UR ACHIEVEEMTNS PUBLICATIONS -->
+					<h2>Publications 
+						<a href="https://ieeexplore.ieee.org/abstract/document/10511782" class="btn btn-primary py-3 px-5">Click Here</a>
+				</h2>
+				
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://github.com/Siddhesh-1008"><span class="icon-github"></span></a></li>
+					  <li class="ftco-animate"><a href="www.linkedin.com/in/siddheshsawant1008    "><span class="icon-linkedin"></span></a></li>  
+					  
+					
+				      
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
